@@ -10,7 +10,7 @@
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js", 
 	"heroku-postbuild": "npm run build",
-	"heroku-prebuild": "npm install --only-dev"
+	"heroku-prebuild": "npm install -g"
 },
   "dependencies": {
     "vue": "^2.5.2",
