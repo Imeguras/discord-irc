@@ -22,7 +22,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 
   // these devServer options should be customized in /config/index.js
   devServer: {
-    allowedHosts: 'all',
+    allowedHosts: ['localhost', 'discord-irc-imeguras.herokuapp.com', '*.herokuapp.com'],
     clientLogLevel: 'warning',
     historyApiFallback: {
       rewrites: [
