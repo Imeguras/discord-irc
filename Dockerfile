@@ -8,8 +8,7 @@ WORKDIR /bot
 
 RUN apk add --update tini && \
 	npm install && \
-	npm run build && \
-	mkdir /config
+	npm run build
 
 ENTRYPOINT ["/sbin/tini", "--"]
-CMD ["npm", "start", "--", "--config", "/config/config.json"]
+CMD ["npm", "run", "start"]
