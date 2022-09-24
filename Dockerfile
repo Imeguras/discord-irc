@@ -10,5 +10,7 @@ RUN apk add --update tini && \
 	npm install && \
 	npm run build
 
+EXPOSE ${CONFIG}
+
 ENTRYPOINT ["/sbin/tini", "--"]
 CMD ["npm", "run", "start"]
